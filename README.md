@@ -1,4 +1,5 @@
-# DataConfirmModal
+# Data-Confirm-Modal
+[![Gem Version](https://badge.fury.io/rb/data_confirm_modal.svg)](https://badge.fury.io/rb/data_confirm_modal)
 
 This Gem was designed as a simple solution to integrate https://github.com/agoragames/confirm-with-reveal into your rails 4+ Application. I have added some instructions on how to customize the modals below, however for full documentation on the original plugin please refer to the repo above.
 
