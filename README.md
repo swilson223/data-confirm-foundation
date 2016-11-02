@@ -1,8 +1,8 @@
 # DataConfirmModal
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/data_confirm_modal`. To experiment with that code, run `bin/console` for an interactive prompt.
+This Gem was designed as a simple solution to integrate https://github.com/agoragames/confirm-with-reveal into your rails 4+ Application. I have added some instructions on how to customize the modals below, however for full documentation on the original plugin please refer to the repo above.
 
-TODO: Delete this and the text above, and describe your gem
+Please note this gem is still in development, and will change continuously, please follow this page to keep current with updates.
 
 ## Installation
 
@@ -21,16 +21,40 @@ Or install it yourself as:
     $ gem install data_confirm_modal
 
 ## Usage
-This Gem is only compatible with Foundation Framework 5+
+### At Present This Gem is only compatible with Foundation Framework 5+
 
-## ToDo
-Troubleshoot integration
+Add to your application.js like shown below:
 
-## Development
+```ruby
+//= require jquery_ujs
+//= require foundation
+//= require data_confirm_modal
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Add the following to the bottom of the page but above ```</html>``` that contains the modal you wish to modify:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+With out forcing a user to type a "Password (that you define)" to continue
+```ruby
+<script>
+  $(document).confirmWithReveal({
+    ok: 'Proceed',
+    cancel: 'Cancel'
+  })
+</script>
+```
+
+To force a user to type a password of your choosing to proceed with the action:
+
+```ruby
+<script>
+  $(document).confirmWithReveal({
+    password: 'DELETE'
+    ok: 'Proceed',
+    cancel: 'Cancel'
+  })
+</script>
+```
+To Be Continued... This should be enough to get you out of the gate!
 
 ## Contributing
 
