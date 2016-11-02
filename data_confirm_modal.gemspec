@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["swilson@taurenltd.com"]
 
   spec.summary       = %q{A Gemmified version of algoragames/confirm-with-reveal plugin}
-  spec.description   = %q{This gem was crated to simplify the way the end user installs this plugin into their Rails 4+ app.}
+  spec.description   = %q{This gem was crated to simplify the way the end user installs the confirm-with-reveal plugin into their Rails 4+ app.}
   spec.homepage      = "https://github.com/swilson223/data-confirm-foundation"
   spec.license       = "MIT"
 
